@@ -1139,8 +1139,8 @@ bootstrap-dist:
 	mkdir -p bootstrap/dos
 	mkdir -p bootstrap/freebsd-x86
 	mkdir -p bootstrap/freebsd-x86_64
-	mkdir -p bootstrap/freebsd-ppc
-	mkdir -p bootstrap/freebsd-ppc64
+	mkdir -p bootstrap/freebsd-powerpc
+	mkdir -p bootstrap/freebsd-powerpc64
 	mkdir -p bootstrap/dragonfly-x86_64
 	mkdir -p bootstrap/solaris-x86_64
 	mkdir -p bootstrap/linux-x86
@@ -1152,8 +1152,8 @@ bootstrap-dist:
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target dos            && mv src/compiler/*.asm bootstrap/dos
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-x86    && mv src/compiler/*.asm bootstrap/freebsd-x86
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-x86_64 && mv src/compiler/*.c   bootstrap/freebsd-x86_64
-	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-ppc    && mv src/compiler/*.c bootstrap/freebsd-ppc
-	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-ppc64  && mv src/compiler/*.c   bootstrap/freebsd-ppc64
+	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc && mv src/compiler/*.c bootstrap/freebsd-powerpc
+	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc64 && mv src/compiler/*.c   bootstrap/freebsd-powerpc64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target dragonfly-x86_64 && mv src/compiler/*.c bootstrap/dragonfly-x86_64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target solaris-x86_64 && mv src/compiler/*.c   bootstrap/solaris-x86_64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target linux-x86      && mv src/compiler/*.asm bootstrap/linux-x86
@@ -1168,8 +1168,8 @@ bootstrap-dist:
 	dos2unix bootstrap/dos/*
 	dos2unix bootstrap/freebsd-x86/*
 	dos2unix bootstrap/freebsd-x86_64/*
-	dos2unix bootstrap/freebsd-ppc/*
-	dos2unix bootstrap/freebsd-ppc64/*
+	dos2unix bootstrap/freebsd-powerpc/*
+	dos2unix bootstrap/freebsd-powerpc64/*
 	dos2unix bootstrap/dragonfly-x86_64/*
 	dos2unix bootstrap/solaris-x86_64/*
 	dos2unix bootstrap/linux-x86/*
