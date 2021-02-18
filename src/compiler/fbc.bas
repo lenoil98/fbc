@@ -3007,9 +3007,9 @@ private function hCompileStage2Module( byval module as FBCIOFILE ptr ) as intege
 
 		if( fbGetOption( FB_COMPOPT_TARGET ) <> FB_COMPTARGET_JS ) then
 			if( fbc.cputype_is_native ) then
-				ln += "-march=native "
+				ln += "-mcpu=native "
 			else
-				ln += "-march=" + *fbGetGccArch( ) + " "
+				ln += "-mcpu=" + *fbGetGccArch( ) + " "
 			end if
 		end if
 
@@ -3129,9 +3129,9 @@ private function hCompileStage2Module( byval module as FBCIOFILE ptr ) as intege
 
 			ln += "-march=armv8-a "
 		case FB_CPUFAMILY_PPC
-			ln += "-mcpu=powerpc "
+			ln += "-march=powerpc "
 		case FB_CPUFAMILY_PPC64
-			ln += "-mcpu=powerpc64 "
+			ln += "-march=powerpc64 "
 		end select
 
 		if( fbGetOption( FB_COMPOPT_PIC ) ) then
