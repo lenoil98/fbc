@@ -1154,8 +1154,8 @@ bootstrap-dist:
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-x86    && mv src/compiler/*.asm bootstrap/freebsd-x86
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-x86_64 && mv src/compiler/*.c   bootstrap/freebsd-x86_64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-aarch64    && mv src/compiler/*.c bootstrap/freebsd-aarch64
-	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc    && mv src/compiler/*.c bootstrap/freebsd-powerpc
-	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc64  && mv src/compiler/*.c   bootstrap/freebsd-powerpc64
+	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc && mv src/compiler/*.c bootstrap/freebsd-powerpc
+	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target freebsd-powerpc64 && mv src/compiler/*.c   bootstrap/freebsd-powerpc64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target dragonfly-x86_64 && mv src/compiler/*.c bootstrap/dragonfly-x86_64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target solaris-x86_64 && mv src/compiler/*.c   bootstrap/solaris-x86_64
 	./$(FBC_EXE) src/compiler/*.bas -m fbc -i inc -e -r -v -target linux-x86      && mv src/compiler/*.asm bootstrap/linux-x86
