@@ -838,6 +838,7 @@ private function hGetTargetId _
 	''    linux-x86_64
 	''    linux-arm
 	''    linux-aarch64
+	''    freebsd-aarch64
 	''    freebsd-x86
 	''    freebsd-x86_64
 	''    freebsd-ppc
