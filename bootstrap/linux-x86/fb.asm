@@ -3306,13 +3306,13 @@ jmp .Lt_02A0
 cmp dword ptr [ebp-16], 4
 jne .Lt_02AF
 .Lt_02B0:
-mov dword ptr [ebp-8], 3
+mov dword ptr [ebp-8], 2
 jmp .Lt_02A0
 .Lt_02AF:
 cmp dword ptr [ebp-16], 5
 jne .Lt_02B1
 .Lt_02B2:
-mov dword ptr [ebp-8], 3
+mov dword ptr [ebp-8], 2
 jmp .Lt_02A0
 .Lt_02B1:
 mov dword ptr [ebp-8], 2

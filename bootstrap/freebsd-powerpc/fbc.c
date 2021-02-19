@@ -6994,7 +6994,7 @@ static void HPRINTVERSION( int32 VERBOSE$1 )
 	FBSTRING* vr$2 = fb_IntToStr( vr$1 );
 	FBSTRING* vr$3 = FBGETHOSTID(  );
 	__builtin_memset( &TMP$711$1, 0, 12 );
-	FBSTRING* vr$6 = fb_StrConcat( &TMP$711$1, (void*)"FreeBASIC Compiler - Version 1.08.0 (2021-02-17), built for ", 61, (void*)vr$3, -1 );
+	FBSTRING* vr$6 = fb_StrConcat( &TMP$711$1, (void*)"FreeBASIC Compiler - Version 1.08.0 (2021-02-18), built for ", 61, (void*)vr$3, -1 );
 	__builtin_memset( &TMP$712$1, 0, 12 );
 	FBSTRING* vr$9 = fb_StrConcat( &TMP$712$1, (void*)vr$6, -1, (void*)" (", 3 );
 	__builtin_memset( &TMP$713$1, 0, 12 );

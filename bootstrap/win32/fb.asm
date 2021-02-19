@@ -2823,13 +2823,13 @@ jmp .Lt_02B0
 cmp dword ptr [ebp-16], 4
 jne .Lt_02BF
 .Lt_02C0:
-mov dword ptr [ebp-8], 3
+mov dword ptr [ebp-8], 2
 jmp .Lt_02B0
 .Lt_02BF:
 cmp dword ptr [ebp-16], 5
 jne .Lt_02C1
 .Lt_02C2:
-mov dword ptr [ebp-8], 3
+mov dword ptr [ebp-8], 2
 jmp .Lt_02B0
 .Lt_02C1:
 mov dword ptr [ebp-8], 2

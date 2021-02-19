@@ -3782,9 +3782,9 @@ _Lt_0006:	.ascii	"0\0"
 .balign 4
 _Lt_000B:	.ascii	"1.08.0\0"
 .balign 4
-_Lt_000C:	.ascii	"02-17-2021\0"
+_Lt_000C:	.ascii	"02-18-2021\0"
 .balign 4
-_Lt_000D:	.ascii	"2021-02-17\0"
+_Lt_000D:	.ascii	"2021-02-18\0"
 .balign 4
 _Lt_000F:	.ascii	"FreeBASIC 1.08.0\0"
 .balign 4

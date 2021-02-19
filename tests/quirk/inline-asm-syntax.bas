@@ -14,6 +14,8 @@ SUITE( fbc_tests.quirk.inline_asm_syntax )
 		''    no matter what backend. (this would produce invalid ASM code)
 		#ifdef __FB_ARM__
 			'' !!! TODO !!! add test for __FB_ARM__
+		#elseif  defined(__FB_PPC__)
+			'' !!! TODO !!! add test for __FB_PPC__		
 		#else
 			'' x86 and x86_64 (The asm code below should work for both, that
 			'' makes this test a bit more simple)

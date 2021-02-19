@@ -56,7 +56,7 @@
 	#ifdef __LP64__
 		#define HOST_64BIT
 	#endif
-#elif defined __ppc64__
+#elif defined __powerpc64__
 	#define HOST_64BIT
 #elif defined __aarch64__
 	#define HOST_64BIT

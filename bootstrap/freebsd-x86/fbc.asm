@@ -15269,7 +15269,7 @@ Lt_077C:	.ascii	"  -z gosub-setjmp  Use setjmp/longjmp to implement GOSUB\0"
 .balign 4
 Lt_077D:	.ascii	"  -z valist-as-ptr Use pointer expressions to implement CVA_*() macros\0"
 .balign 4
-Lt_078B:	.ascii	"FreeBASIC Compiler - Version 1.08.0 (2021-02-17), built for \0"
+Lt_078B:	.ascii	"FreeBASIC Compiler - Version 1.08.0 (2021-02-18), built for \0"
 .balign 4
 Lt_078C:	.ascii	"bit)\0"
 .balign 4

@@ -3220,14 +3220,14 @@ $19FB_CVA_LIST_TYPEDEF FBGETBACKENDVALISTTYPE( void )
 				if( TMP$230$4 != 4ll ) goto label$449;
 				label$450:;
 				{
-					TYPEDEF$1 = 3ll;
+					TYPEDEF$1 = 2ll;
 				}
 				goto label$436;
 				label$449:;
 				if( TMP$230$4 != 5ll ) goto label$451;
 				label$452:;
 				{
-					TYPEDEF$1 = 3ll;
+					TYPEDEF$1 = 2ll;
 				}
 				goto label$436;
 				label$451:;
