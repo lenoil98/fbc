@@ -17,10 +17,12 @@
 #include once "crt/sys/dos/types.bi"
 #elseif defined(__FB_LINUX__)
 #include once "crt/sys/linux/types.bi"
-#elseif defined(__FB_FREEBSD__)
+#elseif defined(__FB_DARWIN__)
+'' May not be correct
 #include once "crt/sys/linux/types.bi"
+'#elseif defined(__FB_FREEBSD__)
 #else
-#error Platform unsupported
+'#error Platform unsupported
 #endif
 
 #endif

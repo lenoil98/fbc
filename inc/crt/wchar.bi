@@ -20,10 +20,14 @@
 #include once "crt/win32/wchar.bi"
 #elseif defined(__FB_LINUX__)
 #include once "crt/linux/wchar.bi"
-#elseif defined(__FB_FREEBSD__)
-#include once "crt/linux/wchar.bi"
 #elseif defined(__FB_DOS__)
 #include once "crt/dos/wchar.bi"
+#elseif defined(__FB_DARWIN__)
+#include once "crt/linux/wchar.bi"
+#elseif defined(__FB_FREEBSD__)
+#include once "crt/freebsd/wchar.bi"
+#else
+#error Unsupported platform
 #endif
 
 extern "c"

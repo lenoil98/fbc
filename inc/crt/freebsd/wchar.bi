@@ -12,17 +12,17 @@
 #include once "crt/long.bi"
 #include once "crt/stdint.bi"
 
-#include once "sys/_null.bi"
-#include once "sys/_types.bi"
+'' #include once "sys/_null.bi"
+'' #include once "sys/_types.bi"
 
 extern "C"
 
 type mbstate_t as __mbstate_t
-type wchar_t as ___wchar_t
-type wint_t as __wint_t
+'' type wchar_t as ___wchar_t
+'' type wint_t as __wint_t
 
-const WCHAR_MIN = __WCHAR_MIN
-const WCHAR_MAX = __WCHAR_MAX
+'' const WCHAR_MIN = __WCHAR_MIN
+'' const WCHAR_MAX = __WCHAR_MAX
 const WEOF = cast(wint_t, -1)
 
 declare function wmemcpy(byval as wstring ptr, byval as const wstring ptr, byval as uinteger) as wstring ptr
