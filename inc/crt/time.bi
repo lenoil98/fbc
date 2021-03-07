@@ -22,7 +22,7 @@
 '' FIXME: may be wrong
 #include once "crt/linux/time.bi"
 #elseif defined(__FB_FREEBSD__)
-'#include once "crt/freebsd/time.bi"
+#include once "crt/freebsd/time.bi"
 #else
 '' POSIX and extensions for other Unices unsupported
 #endif

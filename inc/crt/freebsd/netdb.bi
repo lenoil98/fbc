@@ -53,7 +53,7 @@
 #pragma once
 
 '#include once "crt/sys/freebsd/cdefs.bi"
-#include once "crt/sys/freebsd/_types.bi"
+#include once "crt/sys/freebsd/types.bi"
 
 extern "C"
 

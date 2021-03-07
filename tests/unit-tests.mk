@@ -32,6 +32,7 @@ GREP := grep
 SED := sed
 ECHO := echo
 PRINTF := printf
+MAKE := gmake
 
 ifndef FBC
 FBC := fbc$(EXEEXT)
