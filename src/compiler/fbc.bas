@@ -409,7 +409,7 @@ private function fbcBuildPathToLibFile( byval file as zstring ptr ) as string
 				exit function
 			end if
 
-			tryfile = "/usr/lib/" + *file
+			tryfile = "/usr/lib64/" + *file
 			if( hFileExists( tryfile ) ) then
 				function = tryfile
 				exit function
