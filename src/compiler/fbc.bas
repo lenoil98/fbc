@@ -409,7 +409,7 @@ private function fbcBuildPathToLibFile( byval file as zstring ptr ) as string
 				exit function
 			end if
 
-			tryfile = "/usr/lib64/" + *file
+			tryfile = "/usr/lib/" + *file
 			if( hFileExists( tryfile ) ) then
 				function = tryfile
 				exit function
@@ -4229,8 +4229,10 @@ private sub hSetDefaultLibPaths( )
 	'' Only add them for native builds (no --sysroot); cross builds should
 	'' rely on --sysroot or explicit -p/-P paths.
 	''
-	if(fbGetCpuFamily( ) = FB_CPUFAMILY_PPC64) andalso (len( fbc.sysroot ) = 0) ) then
+	if( (fbGetCpuFamily( ) = FB_CPUFAMILY_PPC64) andalso (len( fbc.sysroot ) = 0) ) then
 		fbcAddDefLibPath( "/usr/lib" )
+		fbcAddDefLibPath( "/usr/lib64" )
+		fbcAddDefLibPath( "/usr/local/lib" )
 		fbcAddDefLibPath( "/lib" )
 	end if
 
@@ -4319,6 +4321,7 @@ private sub hAddDefaultLibs( )
 				defined(__FB_OPENBSD__) or _
 				defined(__FB_NETBSD__)
 				fbcAddDefLibPath( "/usr/X11R6/lib" )
+				fbcAddDefLibPath( "/usr/local/lib" )
 			#endif
 
 			#if defined(__FB_DARWIN__) and defined(ENABLE_XQUARTZ)
